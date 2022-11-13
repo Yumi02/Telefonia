@@ -8,7 +8,7 @@ public class Assinante extends Chamada{
 	protected int numero;
 	protected long cpf;
 	protected int numChamadas;
-	protected ArrayList<Chamada>chamadas;
+	protected Chamada[]chamadas;
 	
 	public Assinante(Date d, Integer duracao, String nome, int numero, long cpf) {
 		super(d, duracao);
