@@ -23,7 +23,7 @@ public class Chamada {
 	public Date getData() {
 		return data;
 	}
-
+	
 	public Integer getDuracao() {
 		return duracao;
 	}

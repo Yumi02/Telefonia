@@ -1,19 +1,20 @@
 package telefonia;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 
 public class Recarga {
-	protected Date data;
-	protected float valor;
+	private GregorianCalendar data;
+	private float valor;
 	
 	
-	public Recarga(Date data, float valor) {
+	public Recarga(GregorianCalendar data, float valor) {
 		super();
 		this.data = data;
 		this.valor = valor;
 	}
 	
-	public Date getData() {
+	public GregorianCalendar getData() {
 		return data;
 	}
 	

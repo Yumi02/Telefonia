@@ -1,20 +1,21 @@
 package telefonia;
 
-import java.util.ArrayList;
 import java.util.Date;
 
-public class Assinante extends Chamada{
-	protected String nome;
-	protected int numero;
-	protected long cpf;
+abstract class Assinante{
+	private String nome;
+	private int numero;
+	private long cpf;
 	protected int numChamadas;
-	protected Chamada[]chamadas;
+	protected Chamada[] chamadas;
 	
-	public Assinante(Date d, Integer duracao, String nome, int numero, long cpf) {
-		super(d, duracao);
+	public Assinante(String nome, int numero, long cpf, int num) {
+		super();
 		this.nome = nome;
 		this.numero = numero;
 		this.cpf = cpf;
+		this.numChamadas = num;
+		this.chamadas = new Chamada[num];
 	}
 
 	public long getCpf() {
@@ -22,6 +23,6 @@ public class Assinante extends Chamada{
 	}
 	
 	public String toString() {
-		return "Assinante [Nome=" + nome + ", CPF=" + cpf + "Numero=" + numero + "Numero de Chamadas=" + numChamadas + "]";
+		return "Assinante [Nome = " + nome + ", CPF = " + cpf + ", Numero = " + numero + "]";
 	}
 }
